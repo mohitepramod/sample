@@ -29,13 +29,13 @@
 	  <repository>
 		  <id>devrepo</id>
 		  <name>Internal Repository</name>
-		  <url>http://192.168.56.102:8081/#browse/browse/components:maven-snapshots</url>
+		  <url>http://192.168.56.104:8081/#browse/browse/components:maven-snapshots</url>
 	  </repository>
 
 	   <snapshotRepository>
 		        <id>Snapshots</id>
 			     <name>snapshotRepo</name>
-			          <url>http://192.168.56.102:8081/repository/maven-snapshots/</url>
+			          <url>http://192.168.56.104:8081/repository/maven-snapshots/</url>
 				   </snapshotRepository>
 			   </distributionManagement>
 
