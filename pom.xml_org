@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>Sample</groupId>
+  <artifactId>sample</artifactId>
+  <version>${version}</version>
+  <packaging>jar</packaging>
+
+  <name>sample</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <!--plugin version-->
+        <!--<maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>-->
+        <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
+        <maven-bundle-plugin.version>3.0.1</maven-bundle-plugin.version>
+        <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
+        <maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
+        <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
+        <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
+        <maven-pax-plugin.version>1.5</maven-pax-plugin.version>
+        <maven-resources-plugin.version>2.7</maven-resources-plugin.version>
+        <maven-source-plugin.version>3.0.0</maven-source-plugin.version>
+        <maven-surefire-plugin.version>2.18.1</maven-surefire-plugin.version>
+        <maven-site-plugin.version>3.5</maven-site-plugin.version>
+        <openjpa-maven-plugin.version>2.4.0</openjpa-maven-plugin.version>
+        <openjpa.version>2.4.0.Release</openjpa.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+
+
+  <distributionManagement>
+	  <repository>
+		  <id>pramodrepo</id>
+		  <name>Internal Repository</name>
+		  <url>http://localhost:8081/nexus/content/repositories/pramodrepo/</url>
+	  </repository>
+
+	   <snapshotRepository>
+              <id>pramodrepo</id>
+              <url>http://localhost:8081/nexus/content/repositories/pramodrepo/</url>
+           </snapshotRepository>
+  </distributionManagement>
+
+
+
+	  
+	  <build>
+     <plugins>
+      <plugin>
+       <groupId>org.codehaus.mojo</groupId>
+       <artifactId>exec-maven-plugin</artifactId>
+       <version>1.1.1</version>
+       <executions>
+        <execution>
+         <phase>test</phase>
+         <goals>
+          <goal>java</goal>
+         </goals>
+         <configuration>
+          <mainClass>code.main.App</mainClass>
+          <arguments>
+           <argument>myArg1</argument>
+           <argument>myArg2</argument>
+          </arguments>
+         </configuration>
+        </execution>
+       </executions>
+      </plugin>
+     </plugins>
+    </build>
+</project>
