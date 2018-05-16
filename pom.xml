@@ -42,14 +42,14 @@
 
   <distributionManagement>
 	  <repository>
-		  <id>snapshots</id>
+		  <id>pramodrepo</id>
 		  <name>Internal Repository</name>
-		  <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+		  <url>http://localhost:8081/nexus/content/repositories/pramodrepo/</url>
 	  </repository>
 
 	   <snapshotRepository>
-              <id>snapshots</id>
-              <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+              <id>pramodrepo</id>
+              <url>http://localhost:8081/nexus/content/repositories/pramodrepo/</url>
            </snapshotRepository>
   </distributionManagement>
 
