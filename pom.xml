@@ -2,8 +2,8 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId></groupId>
-  <artifactId>snapshots</artifactId>
+  <groupId>Sample</groupId>
+  <artifactId>sample</artifactId>
   <version>${version}</version>
   <packaging>jar</packaging>
 
@@ -33,11 +33,10 @@
 	  </repository>
 
 	   <snapshotRepository>
-		        <id>Snapshots</id>
-			     <name>snapshotRepo</name>
-			          <url>http://localhost:8081/repository/maven-snapshots/</url>
-				   </snapshotRepository>
-			   </distributionManagement>
+              <id>snapshots</id>
+              <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+           </snapshotRepository>
+  </distributionManagement>
 
 
 
