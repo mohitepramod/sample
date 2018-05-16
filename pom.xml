@@ -27,9 +27,9 @@
 
   <distributionManagement>
 	  <repository>
-		  <id>devrepo</id>
+		  <id>maven-central</id>
 		  <name>Internal Repository</name>
-		  <url>http://localhost:8081/nexus/#view-repositories;snapshots~configuration</url>
+		  <url>http://localhost:8081/repository/maven-central</url>
 	  </repository>
 
 	   <snapshotRepository>
