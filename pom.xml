@@ -42,9 +42,9 @@
 
   <distributionManagement>
 	  <repository>
-		  <id>maven-central</id>
+		  <id>snapshots</id>
 		  <name>Internal Repository</name>
-		  <url>http://localhost:8081/repository/maven-central</url>
+		  <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
 	  </repository>
 
 	   <snapshotRepository>
